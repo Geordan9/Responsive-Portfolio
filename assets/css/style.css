@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #777777;
+}
+
+body{
+    background-image: url("../images/backgroundimage.png");
+}
+
+header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    border-color: #cccccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #4aaaa5;
+}
+
+hr{
+    margin: 20px 0px;
+}
+
+.mainContent, .mainHeader{
+    margin: 0 auto;
+    width: 960px;
+}
+
+.mainContent{
+    padding: 20px;
+    margin-top: 80px;
+    background-color: #ffffff;
+    border-color: #dddddd;
+    overflow: hidden;
+}
+
+#profileIMG{
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.fullName{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    float: left;
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+.navigationLinks{
+    margin: 20px 10px;
+    float: right;
+}
+
+.vl{
+    border-left: 1px solid #000;
+    height: 5px;
+}
+
+.inputContact{
+    width: 100%;
+}
+.container, .container img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.centered{
+    color: #ffffff;
+    position: absolute;
+    top: 65%;
+    background-color: #4aaaa5;
+    width: 100%;
+    padding: 20px;
+}
+
+.column{
+    float: left;
+}
+
+@media screen and (max-width: 980px){
+    .mainContent{
+        width: 600px;
+    }
+
+    .mainHeader{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .mainContent{
+        width: 400px;
+    }
+    .mainHeader{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .mainContent{
+        width: 75%;
+        margin-top: 150px;
+    }
+
+    .mainHeader{
+        position: static;
+        width: 100%;
+    }
+
+    .fullName{
+        width: 100%;
+        text-align: center;
+    }
+
+    .links{
+        float: left;
+        position: static;
+        left: 50%;
+        margin: 0px;
+        width: 100%;
+    }
+}
